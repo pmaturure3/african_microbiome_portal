@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-     <link rel = "icon" href = "https://h3abionet.org/images/icons/favicon-96x96.png" type = "image/x-icon">
+    <link rel = "icon" href = "https://h3abionet.org/images/icons/favicon-96x96.png" type = "image/x-icon">
     <title>{% block title %}{% endblock %}</title>
     {% block js_top %} {% endblock %}
     <link
@@ -31,6 +31,7 @@
 
   <body>
     <div class="container2">
+
       <nav
           class="navbar navbar-fixed-top navbar-expand-md navbar-light bg-mibio py-md-2"
           >
@@ -86,9 +87,25 @@
             </ul>
           </div>
       </nav>
+      <div class="bg-image-top" style="
+       background-image: url('https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5');
+       min-height: 25vh;width: 100%;background-repeat:no-repeat;background-size:100% 100%;position:relative;
+       ">
+
+
+        <div class="row">
+          <div class="justify-content-center align-self-center"><div class="bg-image-text" style="">Test</div></div>
+        </div>
+
+
+
+      </div>
+
     </div>
     {% block slides %}
-      <div class="container">{% block content %} {% endblock %}</div>
+      <div class="container">
+
+        {% block content %} {% endblock %}</div>
     {% endblock %}
     <div>
       <p></p>
