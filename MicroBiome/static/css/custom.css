@@ -1,6 +1,19 @@
 .bg-mibio {
   background-color: #5aa1e3;
 }
+
+.crop-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.wide-wrapper {
+  left: -200%;
+  position: relative;
+  text-align: center;
+  width: 500%;
+}
+
 /* .bg-mibio{ background-color: #B83F0D; } */
 #logo {
   position: absolute;
