@@ -87,129 +87,140 @@
             </ul>
           </div>
       </nav>
-      <div class="bg-image-top" style="
-       background-image: url('https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5');
-       min-height: 25vh;width: 100%;background-repeat:no-repeat;background-size:100% 100%;position:relative;
-       ">
+      <!--div class="bg-image-top" style="
+        background-image: url('');
+        min-height: 25vh;width: 100%;background-repeat:no-repeat;background-size:100% 100%;position:relative;
+        ">
 
 
         <div class="row">
-          <div class="justify-content-center align-self-center"><div class="bg-image-text" style="">Test</div></div>
+        <div class="justify-content-center align-self-center"><div class="bg-image-text" style="">Test</div></div>
         </div>
 
 
 
-      </div>
+        </div -->
+        <!-- Below div was added by Anmol-->
 
-    </div>
-    {% block slides %}
-      <div class="container">
+        </div>
+        <div class="col-lg-12 text-center p-0 d-flex align-items-center">
+          <img
+              src="https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5"
+              alt="Banner" style="height:50%;width:100%;object-fit: cover;object-position: 0 0;"/>
+          <H1 class="w-100 position-absolute">
+            test
+            {% block title_rep %} Add in your template {% endblock %}
+          </H1>
 
-        {% block content %} {% endblock %}</div>
-    {% endblock %}
-    <div>
-      <p></p>
-      <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js "
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-          crossorigin="anonymous "
-          ></script>
-      <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
-          crossorigin="anonymous "
-          ></script>
-      <script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
-          crossorigin="anonymous "
-          ></script>
-      <script src="/static/js/tagsinut.js "></script>
+        </div>
+        {% block slides %}
+          <div class="container">
 
-      <script src="{% static 'js/ajax.js' %} "></script>
-      <script>
-        $("#post-form ").submit(function (e) {
-                  e.preventDefault();
-                });
-      </script>
-      {% block js%} {% endblock %} {% block content2 %} {% endblock %}
-    </div>
+            {% block content %} {% endblock %}</div>
+        {% endblock %}
+        <div>
+          <p></p>
+          <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js "
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+              crossorigin="anonymous "
+              ></script>
+          <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+              crossorigin="anonymous "
+              ></script>
+          <script
+              src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+              crossorigin="anonymous "
+              ></script>
+          <script src="/static/js/tagsinut.js "></script>
 
-    <!-- Footer -->
-    <div class="page-footer">
-      <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
-        <div class="row">
-          <div class="col-md-3">
-            <p>
-            H3ABioNet is funded by NIH Common Fund Award / NHGRI Grant Number
-            U41HG006941
-            </p>
-          </div>
-          <div class="col-md-2">
-            <img
-                src="{% static 'img/NHGRI-logo_footer.png' %} "
-                class="img-responsive"
-                />
-          </div>
-          <div class="col-md-2">
-            <img
-                src="{% static 'img/NIH-logo_footer.png' %} "
-                class="img-responsive"
-                />
-          </div>
-          <div class="col-md-2">
-            <a href="https://h3africa.org/"
-               ><img
-                    src="{% static 'img/h3africa-_partner.png' %} "
+          <script src="{% static 'js/ajax.js' %} "></script>
+          <script>
+            $("#post-form ").submit(function (e) {
+                          e.preventDefault();
+                        });
+          </script>
+          {% block js%} {% endblock %} {% block content2 %} {% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <div class="page-footer">
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+            <div class="row">
+              <div class="col-md-3">
+                <p>
+                H3ABioNet is funded by NIH Common Fund Award / NHGRI Grant Number
+                U41HG006941
+                </p>
+              </div>
+              <div class="col-md-2">
+                <img
+                    src="{% static 'img/NHGRI-logo_footer.png' %} "
                     class="img-responsive"
-                    /></a>
+                    />
+              </div>
+              <div class="col-md-2">
+                <img
+                    src="{% static 'img/NIH-logo_footer.png' %} "
+                    class="img-responsive"
+                    />
+              </div>
+              <div class="col-md-2">
+                <a href="https://h3africa.org/"
+                   ><img
+                        src="{% static 'img/h3africa-_partner.png' %} "
+                        class="img-responsive"
+                        /></a>
+              </div>
+              <!-- <div class="col-md-2 "><img src="{% static "img/idm_uct_logo.png" %} " class="img-responsive "></div> -->
+              <div class="col-md-2" style="font-size: 22px">
+                <a
+                    target="_blank "
+                    href="https://www.facebook.com/H3ABioNet"
+                    style="padding: 5px"
+                    ><i class="fab fa-facebook-square icon-large"></i
+                    ></a>
+                <a
+                    target="_blank "
+                    href="https://twitter.com/H3ABioNet"
+                    style="padding: 5px"
+                    ><i class="fab fa-twitter-square"></i
+                    ></a>
+                <a
+                    target="_blank "
+                    href="https://www.youtube.com/channel/UCMYQE_GYsOKY6-j8z9N6Adw"
+                    style="padding: 5px"
+                    ><i class="fab fa-youtube-square"></i
+                    ></a>
+              </div>
+            </div>
           </div>
-          <!-- <div class="col-md-2 "><img src="{% static "img/idm_uct_logo.png" %} " class="img-responsive "></div> -->
-          <div class="col-md-2" style="font-size: 22px">
-            <a
-                target="_blank "
-                href="https://www.facebook.com/H3ABioNet"
-                style="padding: 5px"
-                ><i class="fab fa-facebook-square icon-large"></i
-                ></a>
-            <a
-                target="_blank "
-                href="https://twitter.com/H3ABioNet"
-                style="padding: 5px"
-                ><i class="fab fa-twitter-square"></i
-                ></a>
-            <a
-                target="_blank "
-                href="https://www.youtube.com/channel/UCMYQE_GYsOKY6-j8z9N6Adw"
-                style="padding: 5px"
-                ><i class="fab fa-youtube-square"></i
-                ></a>
+          <div class="row">
+            <div class="col-md-3">
+              <p>
+              © {% now "Y " %} Copyright:<a href="https://h3abionet.org">
+                H3ABioNet</a
+              >
+              </p>
+            </div>
+            <div class="col-md-2">
+              <a href="https://helpdesk.h3abionet.org"> Helpdesk</a>
+            </div>
+            <div class="col-md-2">
+              <a href="# ">Github Repository</a>
+            </div>
+            <div class="col-md-2">
+              <a href="/disclaimer ">Disclaimer</a>
+            </div>
+            <div class="col-md-2">
+              <a target="_blank " href="https://h3abionet.org">H3ABioNet</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <p>
-          © {% now "Y " %} Copyright:<a href="https://h3abionet.org">
-            H3ABioNet</a
-          >
-          </p>
-        </div>
-        <div class="col-md-2">
-          <a href="https://helpdesk.h3abionet.org"> Helpdesk</a>
-        </div>
-        <div class="col-md-2">
-          <a href="# ">Github Repository</a>
-        </div>
-        <div class="col-md-2">
-          <a href="/disclaimer ">Disclaimer</a>
-        </div>
-        <div class="col-md-2">
-          <a target="_blank " href="https://h3abionet.org">H3ABioNet</a>
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
+        <!-- Footer -->
   </body>
 </html>
