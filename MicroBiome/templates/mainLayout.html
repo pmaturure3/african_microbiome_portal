@@ -34,21 +34,21 @@
       <div class="row">
         <div class="col-md-4">
           <img
-              src="https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5"
+              src="{% static 'img/banners.jpeg' %}"
               alt="Banner" style="height:50%;width:100%;object-fit: cover;object-position: 0 0;"/>
 
         </div>
 
         <div class="col-md-4">
           <img
-              src="https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5"
+              src="{% static 'img/banners.jpeg' %}"
               alt="Banner" style="height:50%;width:100%;object-fit: cover;object-position: 0 0;"/>
 
         </div>
 
         <div class="col-md-4">
           <img
-              src="https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5"
+              src="{% static 'img/banners.jpeg' %}"
               alt="Banner" style="height:50%;width:100%;object-fit: cover;object-position: 0 0;"/>
 
         </div>
@@ -131,12 +131,20 @@
         </div>
         <!--https://stackoverflow.com/questions/25618199/image-cropping-depending-on-current-window-width-->
         <div class="col-lg-12 text-center p-0 d-flex align-items-center">
-          {% comment %}<div class="crop-wrapper">{% endcomment %}
-            {% comment %}<div class="wide-wrapper">{% endcomment %}
+
+
+
+          <div class="crop-wrapper">
+            <div class="wide-wrapper">
               <img
-                  src="https://uccd1c37920d5460064465d82a42.previews.dropboxusercontent.com/p/thumb/ABUgacNJq4ih2hbuuPg9PT8wgTVBrEQmZ-m7ad0Ko3_pxRfEznf-g4D9OYS1-EwUbohZXMunG-n7z3H_REDxgiQMRJsnHW911T7ho_EdRCm5hph0ozITt6hV1BfXWEQ9ls3t1jgjNXzAzbkVwQKrlWUkHnvrCa4wj26WWyTKVMr8-md2QIn_qWqj7IZLHjJ4lT-tW0m_qofReEDaA5n-DCN6mjk1SF0C41NJ_zxDT8b0rMBbwJseG9RAUsBrqfQsylWL7hQJ40o7lmT6In9CQTZLZF26-7xpV_6HkQCw0kaALjWzyN2ZycsWrfebJUpO6y-w5Dm_FNBvb0t6n5Anp6bB47mr_L44SUla3McnJUiozA/p.jpeg?fv_content=true&size_mode=5"
+                  src="{% static 'img/banners.jpeg' %}"
                   alt="Banner" style="height:50%;width:100%;object-fit: cover;object-position: 0 0;"/>
-              {% comment %}</div></div>{% endcomment %}
+              </div></div>
+
+
+
+
+
           <H1 class="w-100 position-absolute">
             test
             {% block title_rep %} Add in your template {% endblock %}

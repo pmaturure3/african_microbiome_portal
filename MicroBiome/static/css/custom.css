@@ -5,13 +5,13 @@
 .crop-wrapper {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 100% !important;
 }
 .wide-wrapper {
-  left: -200%;
+  /*left: -200% !important;*/
   position: relative;
   text-align: center;
-  width: 500%;
+  width: 100% !important;
 }
 
 /* .bg-mibio{ background-color: #B83F0D; } */
