@@ -1435,16 +1435,18 @@ div#klixoSlider_166 div.textContent {
   }
 }
 
-.menu .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  '/.'text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-right: 5px;
-  color: #29405d;
-}
+/*Please correct below code*/
+
+/*.menu .fa {*/
+/*display: inline-block;*/
+/*font: normal normal normal 14px/1 FontAwesome;*/
+/*font-size: inherit;*/
+/*'/.'text-rendering: auto;*/
+/*-webkit-font-smoothing: antialiased;*/
+/*-moz-osx-font-smoothing: grayscale;*/
+/*margin-right: 5px;*/
+/*color: #29405d;*/
+/*}*/
 
 /* For the map*/
 #column-id-1538991780433 {
